@@ -1,0 +1,567 @@
+<div align="center">&nbsp;<font size="4" face="Verdana"><Strong>Betaalbevestiging</strong></font>&nbsp;</div>
+		<br>
+
+		
+<style type="text/css">
+			div.WaitMsgClass{
+					display:none;
+					background-color: #FFFFFF;
+					border: solid #CCCCCC 4px;
+					padding: 4px;
+					color: #000000;
+					font-family: Verdana;
+					font-weight: bold;
+					position: absolute;
+		        	width: 350px;
+				}
+
+</style>
+<script language="javascript" type="text/Javascript">
+var ncolwaitwindow;
+var ncolwaitwindowopen = 0;
+
+<!--
+document.write('<div class="WaitMsgClass" id="WaitMsgId" style="display: none;"><img id="waitGif" src="https&#58;//secure.ogone.com/images/wait_turn.gif"></div>');
+
+
+
+function ShowWaitMsg(){
+		var wm;
+		var lg;
+		var ht;
+		wm = document.getElementById("WaitMsgId");
+		wm.innerHTML = '<p class="WaitMsgP"><img id="waitGif" src="https&#58;//secure.ogone.com/images/wait_turn.gif">Wij verzoeken u te wachten terwijl wij uw betaling verwerken!</p>';
+		lg = document.body.offsetWidth;
+		ht = document.body.offsetHeight;
+		wm.style.top = String(Math.round(ht/4+50)) + 'px';
+		wm.style.left = String(Math.round((lg-360)/2)) + 'px';
+		wm.style.display = "block";
+
+	}
+
+
+function my_submitAndWait(thisform,limitScriptU)
+{
+	var RC;
+	var wm;
+	var lg;
+	var ht;
+	var bs;
+//	var l=string.length;
+
+	if (typeof fillHdJs != 'undefined')
+	{
+		fillHdJs();
+	}
+
+	RC = evalFormFieldsN(formFields,limitScriptU);
+	if (RC)
+	{
+		ShowWaitMsg();
+		for (i=0; i<thisform.elements.length;i++)
+		{
+			if (thisform.elements[i].type == "submit")
+			{
+				thisform.elements[i].disabled = true;
+			}
+		}
+	}
+	return RC;
+}
+function justWait(string)
+{
+		ShowWaitMsg();
+}
+function close_ncol_wait()
+{
+}
+//-->
+</script>
+
+	<!-- Order overview -->
+	<h2 style="display: inline; position: absolute; left: -1000px; top: -1000px; width: 0px; height: 0px; overflow: hidden;">Overzicht van de bestelling</h2>
+	<table class=ncoltable1 border="0" cellpadding="2" cellspacing="0" width="95%" id="ncol_ref">
+			
+							<tr>
+								<td class=ncoltxtl colspan="1" align="right" width="50%"><small>Referentie van de bestelling :<!--External reference--></small></td>
+								<td class=ncoltxtr colspan="1" width="50%"><small>672104</small></td>
+							</tr>
+						
+
+				<tr>
+					
+							<td class=ncoltxtl colspan="1" align="right" width="50%"><small>
+							Totale kostprijs :<!--Total to pay-->
+							
+							</small></td>
+							<td class=ncoltxtr colspan="1" width="50%">
+								<small>17.90 EUR
+							</small>
+							</td>
+					
+				</tr>
+				
+					<tr>
+						<td class=ncoltxtl colspan="1" align="right"><small>Begunstigde  :<!--Beneficiary--></small></td>
+						<td class=ncoltxtr colspan="1"><small>E-sites</small></td>
+					</tr>
+					
+	</table>
+	
+		<script type="text/javascript" src="js/jquery.core/jquery-1.7.2.min.js"></script>
+	
+		<script type="text/javascript" src="js/jquery.plugins/dependencies/Class.create.js"></script>
+		<script type="text/javascript" src="js/jquery.plugins/jquery.jquery-encoder-0.1.0.min.js"></script>
+		<script type="text/JavaScript">
+		<!--
+		function trustHTML(sStr) {
+			return sStr;
+		}
+		//-->
+		</script>
+	
+		<script type="text/javascript">
+			var OGONE = {};
+			OGONE.jQuery = $.noConflict(true);
+		</script>
+	
+
+	<script type="text/javascript" language="javascript" src="js/required_fields.js"></script>
+
+
+<style type="text/css">
+	.sectionTitle {
+		font-weight: bold;
+		text-align:center;
+		vertical-align: baseline;
+		font-size: small;
+		padding : 10px;
+		text-decoration: underline;
+	}
+	.fieldTitle {
+		font-weight: bold;
+		text-align:right;
+		vertical-align: baseline;
+		font-size: small;
+		padding : 3px;
+	}
+	.fieldValue {
+		text-align:left;
+		vertical-align: baseline;
+		font-size: small;
+		padding : 3px;
+	}
+	.star {
+		font-size: 10px;
+	}
+	.note {
+		font-size: 10px;
+		padding : 3px;
+	}
+	.tc {
+		font-size: 10px;
+		padding : 5px;
+	}
+	.justify {
+		text-align : justify;
+	}
+</style>
+
+<script type="text/javascript">
+	var js_version = 1.0;
+</script>
+<script language="Javascript1.1" type="text/javascript">
+	js_version = 1.1;
+</script>
+<script language="Javascript1.2" type="text/javascript">
+	js_version = 1.2;
+</script>
+<script language="Javascript1.3" type="text/javascript">
+	js_version = 1.3;
+</script>
+<script language="Javascript1.4" type="text/javascript">
+	js_version = 1.4;
+</script>
+<script language="Javascript1.5" type="text/javascript">
+	js_version = 1.5;
+</script>
+<script language="Javascript1.6" type="text/javascript">
+	js_version = 1.6;
+</script>
+<script language="Javascript1.7" type="text/javascript">
+	js_version = 1.7;
+</script>
+<script language="Javascript1.8" type="text/javascript">
+	js_version = 1.8;
+</script>
+<script language="Javascript1.9" type="text/javascript">
+	js_version = 1.9;
+</script>
+<script language="Javascript1.10" type="text/javascript">
+	js_version = 1.10;
+</script>
+
+<script type="text/javascript" src="js/form_validation.js"></script>
+
+<script type="text/JavaScript">
+<!--
+
+	var AlertMSG_109 = "Dit veld is verplicht";
+	var AlertMSG_110 = "U moet een keuze maken uit deze lijst";
+	var AlertMSG_173 = "U moet een nummer invoeren in het veld";
+	var AlertMSG_1205 = "De ingevoerde waarde is verkeerd";
+	var AlertMSG_111 = "Uw e-mailadres is ongeldig";
+	var AlertERR_907 = "Dit veld is niet geldig";
+	var AlertERR_95 = "CVC is aanwezig maar reden waarom het niet aanwezig is eveneens.";
+	var AlertERR_96 = "CVC is niet aanwezig en geen reden waarom.";
+
+
+//-->
+
+
+</script>
+
+						<form method="POST" action="https&#58;//secure.ogone.com/ncol/prod/order_Agree.asp" name="OGONE_CC_FORM" ONSUBMIT="return my_valscript(this);">
+						<input type="hidden" name="CSRFKEY" value="3C31C8654800D7F7C31DA6D215F43EF46233F9D5" />
+<input type="hidden" name="CSRFTS" value="20140805170755" />
+<input type="hidden" name="CSRFSP" value="/ncol/prod/orderstandard.asp" />
+					<input type="hidden" name="WIN3DS" value="">
+					<input type="hidden" name="branding" value="OGONE">
+						<input type="hidden" name="payid" value="1128981444">
+						
+							<input type="hidden" name="version" value="">
+						
+						<input type="hidden" name="AcceptanceRequired" value="False">
+					<input type="hidden" name="hash_param" value="6C715A6247420F92A8E919B124EFA10B5C8288FC">
+					<input type="hidden" name="LimitClientScriptUsage" value="False">
+					<input type="hidden" name="walletid" value="">
+					<input type="hidden" name="walletalias" value="">
+					<input type="hidden" name="wallethash" value="">
+					
+					<p></p>
+					<!-- Hidden title for screenreaders (Payment Data) -->
+					<h2 style="display: inline; position: absolute; left: -1000px; top: -1000px; width: 0px; height: 0px; overflow: hidden;">Betaalgegevens</h2>
+						<table class=ncoltable2 border="0" cellpadding="2" cellspacing="0" width="95%" >
+
+						<tr>
+
+					
+						<td class=ncoltxtl2 width="50%" valign="top" align="right">
+						<small>Betaal met <!--Credit card--> :</small>
+					
+
+						</td>
+						<td class=ncolinput width="50%" valign="top" align="left" nowrap>
+
+					
+									<input type = "hidden" name="card" size="1" value="Eurocard">
+						<img border="0" src="https&#58;//secure.ogone.com/images/Eurocard_choice.gif" align="middle" alt="MasterCard" title="MasterCard">
+							</td>
+						</tr>
+						<tr>
+									<td class=ncoltxtl2 align="right"><small><label for="Ecom_Payment_Card_Name">Naam kaarthouder*</label><!--Card holder name--> :</small></td>
+									<td class=ncolinput ><small><input type="text" name="Ecom_Payment_Card_Name" id="Ecom_Payment_Card_Name" MAXLENGTH="35" size="20" value="van Weerd"></small>
+									
+									</td>
+								</tr>
+								<tr>
+									<td class=ncoltxtl2 align="right"><small>
+										<label for="Ecom_Payment_Card_Number">
+											Kaartnummer*
+										</label><!--Card number--> :</small>
+									</td>
+									<td class=ncolinput ><small>
+										
+										<input name="ChosenBrand" id="ChosenBrand" autocomplete="Off" type="hidden" value="Eurocard">
+										<input name="paymethod" id="paymethod" autocomplete="Off" type="hidden" value="CreditCard">
+										<input name="Ecom_Payment_Card_Number" id="Ecom_Payment_Card_Number" autocomplete="Off" MAXLENGTH="20" size="20" type="text"  class="numberLtr">
+									</small>
+									 
+							</td>
+								</tr>
+							
+									<tr>
+										<td class=ncoltxtl2 align="right"><small>
+										
+												<label for="Ecom_Payment_Card_ExpDate_Month">Vervaldatum &#40;mm</label>/<label for="Ecom_Payment_Card_ExpDate_Year">jjjj&#41;*
+										</label> :</small></td>
+										<td class=ncolinput >
+
+										
+											<small><select id="Ecom_Payment_Card_ExpDate_Month" name="Ecom_Payment_Card_ExpDate_Month" size="1"   title="Vervaldatum &#40;mm/jjjj&#41; &#40;maand&#41;"
+											onchange="document.OGONE_CC_FORM.Comp_Expirydate.value=document.OGONE_CC_FORM.Ecom_Payment_Card_ExpDate_Year.options[document.OGONE_CC_FORM.Ecom_Payment_Card_ExpDate_Year.selectedIndex].value
+															+document.OGONE_CC_FORM.Ecom_Payment_Card_ExpDate_Month.options[document.OGONE_CC_FORM.Ecom_Payment_Card_ExpDate_Month.selectedIndex].value;">
+													<option value=""></option>
+											<option value="01">01</option>
+<option value="02">02</option>
+<option value="03">03</option>
+<option value="04">04</option>
+<option value="05">05</option>
+<option value="06">06</option>
+<option value="07">07</option>
+<option value="08">08</option>
+<option value="09">09</option>
+<option value="10">10</option>
+<option value="11">11</option>
+<option value="12">12</option>
+
+
+											</select>/<select id="Ecom_Payment_Card_ExpDate_Year" name="Ecom_Payment_Card_ExpDate_Year" size="1"   title="Vervaldatum &#40;mm/jjjj&#41; &#40;jaar&#41;"
+											onchange="document.OGONE_CC_FORM.Comp_Expirydate.value=document.OGONE_CC_FORM.Ecom_Payment_Card_ExpDate_Year.options[document.OGONE_CC_FORM.Ecom_Payment_Card_ExpDate_Year.selectedIndex].value
+															+document.OGONE_CC_FORM.Ecom_Payment_Card_ExpDate_Month.options[document.OGONE_CC_FORM.Ecom_Payment_Card_ExpDate_Month.selectedIndex].value;">
+									<option value=""></option>
+									<option value="2014">2014</option>
+<option value="2015">2015</option>
+<option value="2016">2016</option>
+<option value="2017">2017</option>
+<option value="2018">2018</option>
+<option value="2019">2019</option>
+<option value="2020">2020</option>
+<option value="2021">2021</option>
+<option value="2022">2022</option>
+<option value="2023">2023</option>
+<option value="2024">2024</option>
+<option value="2025">2025</option>
+<option value="2026">2026</option>
+<option value="2027">2027</option>
+<option value="2028">2028</option>
+<option value="2029">2029</option>
+<option value="2030">2030</option>
+<option value="2031">2031</option>
+<option value="2032">2032</option>
+<option value="2033">2033</option>
+<option value="2034">2034</option>
+<option value="2035">2035</option>
+<option value="2036">2036</option>
+<option value="2037">2037</option>
+<option value="2038">2038</option>
+<option value="2039">2039</option>
+
+											</select></small>
+									
+										<input type=hidden value="201301" name="Comp_Expirydate">
+										
+								</td>
+								</tr>
+							
+									<script type="text/javascript">
+							<!--//
+							var G_lsu;
+							
+							G_lsu = 0;
+							
+							function my_valscript(thisform)
+							{
+								var RCval;
+								var lsu;
+								lsu = 0;
+								if (document.OGONE_CC_FORM.DCCAvailable != undefined)
+								{
+									if (document.OGONE_CC_FORM.DCCAvailable.value == '1')
+									{
+										if (document.OGONE_CC_FORM.DCCAccept != undefined)
+										{
+											if (!document.OGONE_CC_FORM.DCCAccept[0].checked && !document.OGONE_CC_FORM.DCCAccept[1].checked )
+											{
+												if (lsu == 1)
+												{
+													document.getElementById("idErrMSGDCC").innerHTML = 'Kies uw valuta';
+												}
+												else
+												{
+													alert('Kies uw valuta');
+												}
+												return false;
+											}
+										}
+									}
+								}
+								
+								RCval = my_submitAndDisable(thisform,lsu);
+								return RCval;
+							}
+							//	-->
+						</SCRIPT>
+							
+									<tr>
+										
+
+
+										<td class=ncoltxtl2 align="right"><small><label for="Ecom_Payment_Card_Verification">Card verificatie code*</label> :</small></td>
+										<td class=ncolinput >
+											<small>
+											
+												<input type="text" name="Ecom_Payment_Card_Verification" id="Ecom_Payment_Card_Verification" autocomplete="Off" size="10" MAXLENGTH="10" >
+											
+											</small>&nbsp;
+										
+											<small>
+												<select name="CVCFlag" title="CVC">
+													<option value="1">CVC aanwezig</option>
+													<option value="2">CVC onleesbaar</option>
+													<option value="9">Kaart zonder CVC</option>
+													<option value="0">CVC niet verstrekt</option>
+												</select>
+											</small>&nbsp;
+										
+												<small>
+													<small>
+														<a class=midncol href="https&#58;//secure.ogone.com/ncol/prod/card_verification_code.asp&#63;lang=8&amp;ABRAND=%3BEurocard&amp;CSRFSP=%2Fncol%2Fprod%2Forderstandard%2Easp&amp;CSRFKEY=D75D9648C90F9EF15ADF941CEFA5E0CCB615D6B8&amp;CSRFTS=20140805170756" target="popup" onclick="window.open('','popup','width=300,height=400,left=0,top=0,scrollbars=1')">Wat is dit&#63;</a>
+													</small>
+												</small>
+											
+										</td>
+									</tr>
+								
+							<input type="hidden" name="ownerZIP" value="">
+							<input type="hidden" name="owneraddress" value="">
+						
+								<tr>
+									<td colspan ="2" valign="middle" align="center" >
+										<small><small>
+										* Verplichte velden
+										<br>
+										
+								</small>
+										</small>
+										</td>
+								</tr>
+								<tr align="center">
+									<td colspan="2" valign="middle" align="center" >
+										<small>
+										
+									<input type="submit" class="ncol" name="payment" value="Ja, ik bevestig mijn betaling" id=submit3 />
+								
+										</small>
+										</td>
+								</tr>
+							
+
+						</table>
+						
+					</form>
+
+					
+
+					<script type="text/javascript">
+					<!--
+					
+						arrcvc = "#EUROCARD#VISA#"
+						arrDispCVCFlag = "#EUROCARD#"
+							formFields= new FormFieldsA(6,"document.OGONE_CC_FORM");
+							formFields[0]= new FieldDescriptor("Ecom_Payment_Card_Name","Naam kaarthouder","T","$$F.value !=''",null);
+								formFields[1]= new FieldDescriptor("Ecom_Payment_Card_Name","Voer een geldige naam voor de kaarthouder in (moet verschillen van het nummer van de kaart).","TD","$$F.value != document.OGONE_CC_FORM.Ecom_Payment_Card_Number.value",null);
+							formFields[2]= new FieldDescriptor("Ecom_Payment_Card_Number","Kaartnummer","TN","$$F.value !=''",null);
+									formFields[3]= new FieldDescriptor("Ecom_Payment_Card_Number","Kaartnummer","TV","checkCCValid($$F)",null);
+							formFields[4]= new FieldDescriptor("Comp_Expirydate","Vervaldatum (mm/jjjj)","TV","$$F.value >= 201408",null);
+								formFields[5]= new FieldDescriptor("Ecom_Payment_Card_Verification","Card verificatie code","TN","checkCVCAndPresInd($$F,document.OGONE_CC_FORM.CVCFlag,document.OGONE_CC_FORM.Ecom_Payment_Card_Number)",null);
+                    
+					//--></script>
+				
+
+			<script type="text/javascript" language="javascript">
+				function ClearForm() {
+					if (typeof setRequired == 'function') {
+						setRequired();
+					}
+
+					if (typeof formFields != "undefined") {
+						var ignoreFields = new Array();
+			
+						ignoreFields.push('Ecom_Payment_Card_Name');
+						ignoreFields.push('Bank_Owner');
+			
+						var formName = formFields.formName.split(".")[1];
+						for (var i = 0; i < formFields.totalFields; i++) {
+							var fieldName = formFields[i].fieldName;
+							var formField = document.forms[formName].elements[fieldName];
+							if (formField.type == "text") {
+								if (!ignoreFields.inArray(fieldName)) {
+									formField.value = "";
+								}
+							}
+						}
+
+						if (formName == 'OGONE_CC_FORM') {
+							if (document.forms['OGONE_CC_FORM'].elements['Ecom_Payment_Card_ExpDate_Month']) {
+								document.forms['OGONE_CC_FORM'].elements['Ecom_Payment_Card_ExpDate_Month'].selectedIndex = 0;
+							}
+							if (document.forms['OGONE_CC_FORM'].elements['Ecom_Payment_Card_ExpDate_Year']) {
+								document.forms['OGONE_CC_FORM'].elements['Ecom_Payment_Card_ExpDate_Year'].selectedIndex = 0;
+							}
+			
+						var ownerCty = document.forms['OGONE_CC_FORM'].elements['OwnerCTY'];
+						if (ownerCty) {
+								ownerCty.selectedIndex = 0;
+						}
+			
+						}
+					}
+
+				}
+
+				window.onload = ClearForm;
+			</script>
+
+	<script type="text/javascript" language="JavaScript" src="js/fp/Fp_inc.1.2.js"></script>
+	<script type="text/javascript" language="JavaScript" src="base64_inc.js"></script>
+	
+<!-- Further information / Cancel -->
+<h2 style="display: inline; position: absolute; left: -1000px; top: -1000px; width: 0px; height: 0px; overflow: hidden;">Overige gegevens / Annuleren</h2>
+<table class=ncoltable3 border="0" cellpadding="2" cellspacing="0" width="95%" id="ie_cc" style="behavior:url(#default#clientCaps)">
+	<tr><td class="ncollogoc" valign="middle" align="center" width="33%"><a href="http://www.mastercardbusiness.com/mcbiz/index.jsp?template=/orphans&content=securecodepopup" target="_blank"><img border="0" src="https://secure.ogone.com/images/Eurocard_brand3D.gif" alt="MasterCard" title="MasterCard" hspace="3"></a><img border="0" src="https&#58;//secure.ogone.com/images/INTERPAY.gif" hspace="5" alt="INTERPAY" title="INTERPAY" id="NCOLACQ"></td><td class="ncollogoc" valign="middle" align="center" width="33%"><a href="https&#58;//secure.ogone.com/ncol/PSPabout.asp?lang=8&pspid=CharlieChoeSleepwear&branding=OGONE&CSRFSP=%2Fncol%2Fprod%2Forderstandard%2Easp&CSRFKEY=5F3A3E3D3560EF1AE1448CFEE341887AFE11F5D4&CSRFTS=20140805170756" target="_blank"><img border="0" src="https&#58;//secure.ogone.com/images/PP_ogone8.gif" alt="Betaling verwerkt door Ogone" title="Betaling verwerkt door Ogone" vspace="2" id="NCOLPP"></a><br><small><small><a class="bottom" href="https&#58;//secure.ogone.com/ncol/PSPabout.asp&#63;lang=8&amp;pspid=CharlieChoeSleepwear&amp;branding=OGONE&amp;CSRFSP=%2Fncol%2Fprod%2Forderstandard%2Easp&amp;CSRFKEY=5F3A3E3D3560EF1AE1448CFEE341887AFE11F5D4&amp;CSRFTS=20140805170756" target="_blank">Over Ogone</a> |<a class="bottom" href="https&#58;//secure.ogone.com/ncol/privacy.asp&#63;lang=8&amp;CSRFSP=%2Fncol%2Fprod%2Forderstandard%2Easp&amp;CSRFKEY=A3A0D908B1CE07FCCF5926DC06D080E70368E8F8&amp;CSRFTS=20140805170756&branding=OGONE" target="_blank">Privacybeleid<!--Privacy policy--></a> |<a class="bottom" href="https&#58;//secure.ogone.com/ncol/security.asp&#63;lang=8&amp;mode=STD&amp;branding=OGONE&amp;CSRFSP=%2Fncol%2Fprod%2Forderstandard%2Easp&amp;CSRFKEY=A53F365477CAAADE61D61EAAFBA54776D6D0D9DD&amp;CSRFTS=20140805170756" target="_blank">Veiligheid<!--Security--></a>| <a class="bottom" href="https&#58;//secure.ogone.com/ncol/legal.asp&#63;lang=8&amp;mode=STD&amp;branding=OGONE&amp;CSRFSP=%2Fncol%2Fprod%2Forderstandard%2Easp&amp;CSRFKEY=221F10378AA77CE8F5E206CFCC489AD1D8752071&amp;CSRFTS=20140805170756" target="_blank">Wettelijke informatie<!--Legal--></a></small></small></td><td class="ncollogoc" valign="middle" align="center" width="33%"><a HREF="https://seal.verisign.com/splash?form_file=fdf/splash.fdf&dn=SECURE.OGONE.COM&lang=nl" target="VRSN_Splash"><IMG NAME="seal" BORDER="0" SRC="https://secure.ogone.com/images/verisign_EN.gif" alt="Verisign" ></A></td></tr>
+		<tr>
+				<td class=ncollogoc align="center" colspan="3">
+						<center>
+							<table border="0" cellpadding="0" cellspacing="0" >
+									<tr>
+										
+												<td class="ncollogoc" align="center" width="50%">
+													
+													<form class="normal" action="https&#58;//secure.ogone.com/ncol/prod/orderstandard.asp" method=POST id=form1 name=form1 style="margin-bottom:0px;">
+														<input type="hidden" name="CSRFKEY" value="F03DC09F9D66883CBA0A50F7D8E9A5C4DF8DC0CD" />
+<input type="hidden" name="CSRFTS" value="20140805170756" />
+<input type="hidden" name="CSRFSP" value="/ncol/prod/orderstandard.asp" />
+														<input type="hidden" name="WIN3DS" value="">
+														<input type="hidden" name="PMListType" value="">
+														<input type="hidden" name="branding" value="OGONE">
+														<input type="hidden" name="payid" value="1128981444">
+														<input type="hidden" name="hash_param" value="6C715A6247420F92A8E919B124EFA10B5C8288FC">
+														<input type="hidden" name="walletid" value="">
+														<input type="hidden" name="walletalias" value="">
+														<input type="hidden" name="wallethash" value="">
+														<input type="hidden" name="CatalogURL" value="">
+														<input type="hidden" name="HomeURL" value="">
+														<input type="hidden" name="LimitClientScriptUsage" value="False">
+														
+														<small><input class=ncol type="submit" name="reselect" value="Terug" id="btn_Back"></small>
+													</form>
+												</td>
+											
+											<td class=ncollogoc align="center" width="50%">
+											
+													<form method="POST" action="https&#58;//secure.ogone.com/ncol/prod/Order_Cancel.asp" id=form3 name=form3 onsubmit="return(window.confirm('Weet u zeker dat u deze transactie wilt annuleren&#63;'))"  style="margin-bottom:0px;">
+													<input type="hidden" name="CSRFKEY" value="762F354235F1FF03109721EF58A63640D64BB0FD" />
+<input type="hidden" name="CSRFTS" value="20140805170756" />
+<input type="hidden" name="CSRFSP" value="/ncol/prod/orderstandard.asp" />
+														<input type="hidden" name="payid" value="1128981444">
+														<input type="hidden" name="ownerZIP" value="">
+														<input type="hidden" name="owneraddress" value="">
+														<input type="hidden" name="alias" value="">
+														<input type="hidden" name="aliasoperation" value="">
+														<input type="hidden" name="hash_param" value="6C715A6247420F92A8E919B124EFA10B5C8288FC">
+														<input type="hidden" name="branding" value="OGONE">
+														<small><input class=ncol ID="ncol_cancel" type="submit" name="cancel" value="Annuleren"></small><!--Cancel-->
+													</form>
+											
+											</td>
+										
+									</tr>
+							</table>
+						</center>
+				</td>
+
+		</tr>
+		
+
+</table>

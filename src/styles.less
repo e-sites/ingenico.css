@@ -1,0 +1,51 @@
+/**
+ * First of, include Bootstrap
+ *
+ * Now I hear you thinking..."but but but, BS is f*cking huge! Such overhead!"
+ * Yes it is. Luckily for you...all unnecessary CSS is stripped out
+ * in the production build. So, hold your horses ;)
+ */
+@import "../bower_components/bootstrap/less/variables.less";
+@import "../bower_components/bootstrap/less/mixins.less";
+@import "../bower_components/bootstrap/less/normalize.less";
+@import "../bower_components/bootstrap/less/scaffolding.less";
+@import "../bower_components/bootstrap/less/type.less";
+@import "../bower_components/bootstrap/less/tables.less";
+@import "../bower_components/bootstrap/less/forms.less";
+@import "../bower_components/bootstrap/less/buttons.less";
+
+/**
+ * Custom .og- stuff
+ */
+.og-outer-wrapper {
+	max-width: 90%;
+	border: 1px solid #ccc;
+	margin: 1em auto 0;
+}
+
+/**
+ * Style hooks
+ *
+ * Based on Bootstrap, but you can easily hook up your own
+ * from your favorite framework
+ */
+.og-hook-main-title {
+	.h2();
+}
+.og-hook-subtitle {
+	.h3();
+}
+.og-hook-form-control {
+	.form-control();
+}
+.og-hook-button-primary {
+	.btn-primary();
+}
+.og-hook-button {
+	.btn();
+}
+
+/**
+ * Handle all overrides
+ */
+@import "overrides.less";
