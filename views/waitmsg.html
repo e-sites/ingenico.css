@@ -1,0 +1,340 @@
+<div align="center">&nbsp;<font size="4" face="Verdana"><Strong>Betaalbevestiging</strong></font>&nbsp;</div>
+		<br>
+
+		
+<style type="text/css">
+			div.WaitMsgClass{
+					display:none;
+					background-color: #FFFFFF;
+					border: solid #CCCCCC 4px;
+					padding: 4px;
+					color: #000000;
+					font-family: Verdana;
+					font-weight: bold;
+					position: absolute;
+		        	width: 350px;
+				}
+
+</style>
+<script language="javascript" type="text/Javascript">
+var ncolwaitwindow;
+var ncolwaitwindowopen = 0;
+
+<!--
+document.write('<div class="WaitMsgClass" id="WaitMsgId" style="display: none;"><img id="waitGif" src="https&#58;//secure.ogone.com/images/wait_turn.gif"></div>');
+
+
+
+function ShowWaitMsg(){
+		var wm;
+		var lg;
+		var ht;
+		wm = document.getElementById("WaitMsgId");
+		wm.innerHTML = '<p class="WaitMsgP"><img id="waitGif" src="https&#58;//secure.ogone.com/images/wait_turn.gif">Wij verzoeken u te wachten terwijl wij uw betaling verwerken!</p>';
+		lg = document.body.offsetWidth;
+		ht = document.body.offsetHeight;
+		wm.style.top = String(Math.round(ht/4+50)) + 'px';
+		wm.style.left = String(Math.round((lg-360)/2)) + 'px';
+		wm.style.display = "block";
+
+	}
+
+
+function my_submitAndWait(thisform,limitScriptU)
+{
+	var RC;
+	var wm;
+	var lg;
+	var ht;
+	var bs;
+//	var l=string.length;
+
+	if (typeof fillHdJs != 'undefined')
+	{
+		fillHdJs();
+	}
+
+	RC = evalFormFieldsN(formFields,limitScriptU);
+	if (RC)
+	{
+		ShowWaitMsg();
+		for (i=0; i<thisform.elements.length;i++)
+		{
+			if (thisform.elements[i].type == "submit")
+			{
+				thisform.elements[i].disabled = true;
+			}
+		}
+	}
+	return RC;
+}
+function justWait(string)
+{
+		ShowWaitMsg();
+}
+function close_ncol_wait()
+{
+}
+//-->
+</script>
+
+	<!-- Order overview -->
+	<h2 style="display: inline; position: absolute; left: -1000px; top: -1000px; width: 0px; height: 0px; overflow: hidden;">Overzicht van de bestelling</h2>
+	<table class=ncoltable1 border="0" cellpadding="2" cellspacing="0" width="95%" id="ncol_ref">
+			
+							<tr>
+								<td class=ncoltxtl colspan="1" align="right" width="50%"><small>Referentie van de bestelling :<!--External reference--></small></td>
+								<td class=ncoltxtr colspan="1" width="50%"><small>672104</small></td>
+							</tr>
+						
+
+				<tr>
+					
+							<td class=ncoltxtl colspan="1" align="right" width="50%"><small>
+							Totale kostprijs :<!--Total to pay-->
+							
+							</small></td>
+							<td class=ncoltxtr colspan="1" width="50%">
+								<small>17.90 EUR
+							</small>
+							</td>
+					
+				</tr>
+				
+					<tr>
+						<td class=ncoltxtl colspan="1" align="right"><small>Begunstigde  :<!--Beneficiary--></small></td>
+						<td class=ncoltxtr colspan="1"><small>E-sites&nbsp;via Tunz.com NV/SA</small></td>
+					</tr>
+					
+	</table>
+	
+		<script type="text/javascript" src="js/jquery.core/jquery-1.7.2.min.js"></script>
+	
+		<script type="text/javascript" src="js/jquery.plugins/dependencies/Class.create.js"></script>
+		<script type="text/javascript" src="js/jquery.plugins/jquery.jquery-encoder-0.1.0.min.js"></script>
+		<script type="text/JavaScript">
+		<!--
+		function trustHTML(sStr) {
+			return sStr;
+		}
+		//-->
+		</script>
+	
+		<script type="text/javascript">
+			var OGONE = {};
+			OGONE.jQuery = $.noConflict(true);
+		</script>
+	
+
+	<script type="text/javascript" language="javascript" src="js/required_fields.js"></script>
+
+
+<style type="text/css">
+	.sectionTitle {
+		font-weight: bold;
+		text-align:center;
+		vertical-align: baseline;
+		font-size: small;
+		padding : 10px;
+		text-decoration: underline;
+	}
+	.fieldTitle {
+		font-weight: bold;
+		text-align:right;
+		vertical-align: baseline;
+		font-size: small;
+		padding : 3px;
+	}
+	.fieldValue {
+		text-align:left;
+		vertical-align: baseline;
+		font-size: small;
+		padding : 3px;
+	}
+	.star {
+		font-size: 10px;
+	}
+	.note {
+		font-size: 10px;
+		padding : 3px;
+	}
+	.tc {
+		font-size: 10px;
+		padding : 5px;
+	}
+	.justify {
+		text-align : justify;
+	}
+</style>
+
+
+			<script type="text/javascript">
+				var popupWinING;
+				var submitpopupWin = 0;
+			</script>
+		
+
+		<FORM NAME="downloadformING" METHOD="GET" ACTION="https&#58;//homepay.ing.be/NL/index.jsp">
+		<INPUT TYPE="HIDDEN" NAME="ucr" VALUE="true">
+		<INPUT TYPE="HIDDEN" NAME="VENDOR_ID" VALUE="92362439701">
+		<INPUT TYPE="HIDDEN" NAME="AMOUNT" VALUE="000000001790">
+		<INPUT TYPE="HIDDEN" NAME="CURRENCY" VALUE="EUR">
+		<INPUT TYPE="HIDDEN" NAME="MESSAGE" VALUE="112898144493">
+		<INPUT TYPE="HIDDEN" NAME="RETURN_URL" VALUE="https&#58;//secure.ogone.com/ncol/prod/order_ANetB_flowhandler.asp&#63;HashNetb=6C715A6247420F92A8E919B124EFA10B5C8288FC&amp;payid=1128981444">
+		<INPUT TYPE="HIDDEN" NAME="RETURN_METHOD" VALUE="POST">
+		
+			<input type="hidden" name="VERSION" value="2" />
+			<input type="hidden" name="HASH" value="2EE7058515A0333EF60F16C08D5C753B888C3A16" />
+
+		<table class=ncoltable2 border="0" cellpadding="2" cellspacing="0" width="95%">
+			<tr align="center">
+				<td class=ncoltxtc width="50%" valign="top" align="center">
+					<small>Online betalen via uw bank</small>
+				</td>
+				<td class=ncoltxtc rowspan="3" width="49%" valign="center" align="left">
+					<small>Click here&nbsp;--></small> <INPUT TYPE=IMAGE src="https&#58;//secure.ogone.com/images/bblpay.gif" BORDER=0 VALUE="Pay with BBL Home Bank" style="vertical-align: middle">
+				</td>
+			</tr>
+			<tr align="center">
+				<td class=ncoltxtc valign="top" align="center">
+					
+				</td>
+			</tr>
+			<tr>
+				<td class=ncoltxtc valign="top" align="center" style="font-size: small">
+					
+				</td>
+			</tr>
+			<tr>
+				<td class=ncoltxtc valign="top" align="center">
+					<p >&nbsp;
+					
+				</td>
+			</tr>
+			<tr align="center">
+				<td colspan ="2" valign="middle" align="center">
+					<p align="center">
+						<small>
+							
+								<input type="submit" name="INGOPENREGULAR" align="center" class="ncol" value="Ja, ik bevestig mijn betaling" id="submit1">
+							
+				<!--accept-->
+						</small>
+					</p>
+				</td>
+			</tr>
+
+			<script type="text/javascript">
+			<!--
+			function LoadPopup(){
+			if (self.name == null)	{
+				self.name = "ogoneMain";}
+			popupWinING = window.open('about:blank','popupWinING','width=400, height=500, left=0, top=0, status, location, resizable,scrollbars');
+
+			try {
+				if (popupWinING != null){
+					if  (!popupWinING || popupWinING.closed){
+//						self.document.popupWinING.submit();}
+						OpenPopup_manually();
+						}
+					else{
+						if (!popupWinING.opener || popupWinING.opener == null){
+							popupWinING.opener = self;}
+						self.document.downloadformING.target = 'popupWinING';
+							//self.document.downloadformING.winstat.value='U moet zich nu identificeren.Wij verzoeken u de instructies van de popup op te volgen';
+							self.document.getElementById('winstat').innerHTML='U moet zich nu identificeren.Wij verzoeken u de instructies van de popup op te volgen';
+						self.document.downloadformING.submit();
+						popupWinING.focus();
+						}
+					}
+				else{
+//					self.document.downloadformING.submit();}
+				OpenPopup_manually();
+					}
+			}
+			catch(e) {
+				OpenPopup_manually();
+			}
+
+			}
+			function OpenPopup_manually(){
+				
+					//self.document.downloadformING.winstat.value="Een op uw pc geïnstalleerde popup blocker heeft de automatische opening van het popup betaalvenster geblokkeerd. Klik op het logo om verder te gaan.";
+					self.document.getElementById('winstat').innerHTML='Een op uw pc ge&#239;nstalleerde popup blocker heeft de automatische opening van het popup betaalvenster geblokkeerd. Klik op het logo om verder te gaan.';
+				self.document.downloadformING.winstat.fontweight="bold";
+				}
+			//-->
+			</SCRIPT>
+		</TABLE>
+		</FORM>
+					
+					<script type="text/javascript">
+			<!--//
+				
+					//self.document.downloadformING.submit();
+				
+			//	-->
+		</SCRIPT>
+		
+	<script type="text/javascript" language="JavaScript" src="js/fp/Fp_inc.1.2.js"></script>
+	<script type="text/javascript" language="JavaScript" src="base64_inc.js"></script>
+	
+<!-- Further information / Cancel -->
+<h2 style="display: inline; position: absolute; left: -1000px; top: -1000px; width: 0px; height: 0px; overflow: hidden;">Overige gegevens / Annuleren</h2>
+<table class=ncoltable3 border="0" cellpadding="2" cellspacing="0" width="95%" id="ie_cc" style="behavior:url(#default#clientCaps)">
+	<tr><td class="ncollogoc" valign="middle" align="center" width="33%">&nbsp;</td><td class="ncollogoc" valign="middle" align="center" width="33%"><a href="https&#58;//secure.ogone.com/ncol/PSPabout.asp?lang=8&pspid=CharlieChoeSleepwear&branding=OGONE&CSRFSP=%2Fncol%2Fprod%2Forderstandard%2Easp&CSRFKEY=5E3D474DAC5499B72FFFE3E20058446B35A143BD&CSRFTS=20140805171403" target="_blank"><img border="0" src="https&#58;//secure.ogone.com/images/PP_ogone8.gif" alt="Betaling verwerkt door Ogone" title="Betaling verwerkt door Ogone" vspace="2" id="NCOLPP"></a><br><small><small><a class="bottom" href="https&#58;//secure.ogone.com/ncol/PSPabout.asp&#63;lang=8&amp;pspid=CharlieChoeSleepwear&amp;branding=OGONE&amp;CSRFSP=%2Fncol%2Fprod%2Forderstandard%2Easp&amp;CSRFKEY=5E3D474DAC5499B72FFFE3E20058446B35A143BD&amp;CSRFTS=20140805171403" target="_blank">Over Ogone</a> |<a class="bottom" href="https&#58;//secure.ogone.com/ncol/privacy.asp&#63;lang=8&amp;CSRFSP=%2Fncol%2Fprod%2Forderstandard%2Easp&amp;CSRFKEY=F81989DBC7266450C58D97AE749DB0BE6BF1F49F&amp;CSRFTS=20140805171403&branding=OGONE" target="_blank">Privacybeleid<!--Privacy policy--></a> |<a class="bottom" href="https&#58;//secure.ogone.com/ncol/security.asp&#63;lang=8&amp;mode=STD&amp;branding=OGONE&amp;CSRFSP=%2Fncol%2Fprod%2Forderstandard%2Easp&amp;CSRFKEY=3945BF9418C4D137AF60BA00D34A4200FB05FCA1&amp;CSRFTS=20140805171403" target="_blank">Veiligheid<!--Security--></a>| <a class="bottom" href="https&#58;//secure.ogone.com/ncol/legal.asp&#63;lang=8&amp;mode=STD&amp;branding=OGONE&amp;CSRFSP=%2Fncol%2Fprod%2Forderstandard%2Easp&amp;CSRFKEY=A4E893040E22A2930A68B416E65E66956F49E963&amp;CSRFTS=20140805171403" target="_blank">Wettelijke informatie<!--Legal--></a></small></small></td><td class="ncollogoc" valign="middle" align="center" width="33%"><a HREF="https://seal.verisign.com/splash?form_file=fdf/splash.fdf&dn=SECURE.OGONE.COM&lang=nl" target="VRSN_Splash"><IMG NAME="seal" BORDER="0" SRC="https://secure.ogone.com/images/verisign_EN.gif" alt="Verisign" ></A></td></tr>
+		<tr>
+				<td class=ncollogoc align="center" colspan="3">
+						<center>
+							<table border="0" cellpadding="0" cellspacing="0" >
+									<tr>
+										
+												<td class="ncollogoc" align="center" width="50%">
+													
+													<form class="normal" action="https&#58;//secure.ogone.com/ncol/prod/orderstandard.asp" method=POST id=form1 name=form1 style="margin-bottom:0px;">
+														<input type="hidden" name="CSRFKEY" value="83BBC2C7C3CF7298AE77AA3B4F47C6BD2BB3F9FF" />
+<input type="hidden" name="CSRFTS" value="20140805171403" />
+<input type="hidden" name="CSRFSP" value="/ncol/prod/orderstandard.asp" />
+														<input type="hidden" name="WIN3DS" value="">
+														<input type="hidden" name="PMListType" value="">
+														<input type="hidden" name="branding" value="OGONE">
+														<input type="hidden" name="payid" value="1128981444">
+														<input type="hidden" name="hash_param" value="6C715A6247420F92A8E919B124EFA10B5C8288FC">
+														<input type="hidden" name="walletid" value="">
+														<input type="hidden" name="walletalias" value="">
+														<input type="hidden" name="wallethash" value="">
+														<input type="hidden" name="CatalogURL" value="">
+														<input type="hidden" name="HomeURL" value="">
+														<input type="hidden" name="LimitClientScriptUsage" value="False">
+														
+														<small><input class=ncol type="submit" name="reselect" value="Terug" id="btn_Back"></small>
+													</form>
+												</td>
+											
+											<td class=ncollogoc align="center" width="50%">
+											
+													<form method="POST" action="https&#58;//secure.ogone.com/ncol/prod/Order_Cancel.asp" id=form3 name=form3 onsubmit="return(window.confirm('Weet u zeker dat u deze transactie wilt annuleren&#63;'))"  style="margin-bottom:0px;">
+													<input type="hidden" name="CSRFKEY" value="6A3BFF7273286410994D573949DE265DA393FAF1" />
+<input type="hidden" name="CSRFTS" value="20140805171403" />
+<input type="hidden" name="CSRFSP" value="/ncol/prod/orderstandard.asp" />
+														<input type="hidden" name="payid" value="1128981444">
+														<input type="hidden" name="ownerZIP" value="">
+														<input type="hidden" name="owneraddress" value="">
+														<input type="hidden" name="alias" value="">
+														<input type="hidden" name="aliasoperation" value="">
+														<input type="hidden" name="hash_param" value="6C715A6247420F92A8E919B124EFA10B5C8288FC">
+														<input type="hidden" name="branding" value="OGONE">
+														<small><input class=ncol ID="ncol_cancel" type="submit" name="cancel" value="Annuleren"></small><!--Cancel-->
+													</form>
+											
+											</td>
+										
+									</tr>
+							</table>
+						</center>
+				</td>
+
+		</tr>
+		
+
+</table>

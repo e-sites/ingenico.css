@@ -1,0 +1,6 @@
+{
+  "name": "Ogone.css",
+  "devDependencies": {
+    "bootstrap": "~3.2.0"
+  }
+}

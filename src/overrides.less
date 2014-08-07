@@ -1,0 +1,255 @@
+/**
+ * Typography
+ */
+small,
+font,
+td.ncolh1,
+td.ncoltxtl,
+td.ncoltxtl2,
+td.ncoltxtr,
+td.ncoltxtc,
+td.ncollogol,
+td.ncollogor,
+td.ncollogoc,
+td.ncoltxtmessage,
+td.ncolinput,
+td.ncolline1,
+td.ncolline2,
+input.ncol,
+table.ncoltable1
+table.ncoltable2
+table.ncoltable3,
+table.ncoltable1 td,
+table.ncoltable2 td,
+table.ncoltable3 td {
+	font-size: @font-size-base;
+	font-family: @font-family-sans-serif;
+	font-weight: normal;
+}
+
+/**
+ * First table
+ */
+body {
+	> table {
+		margin-top: 1em;
+	}
+}
+
+form {
+	margin-bottom: 0;
+}
+
+/**
+ * Main title
+ */
+div[align="center"]:first-child {
+	strong {
+		.og-hook-main-title();
+		display: block;
+		margin: 0;
+		line-height: 1;
+	}
+}
+
+/**
+ * Other tables
+ */
+table {
+	.table();
+	margin-bottom: 0;
+	border-collapse: separate;
+
+	&.ncoltable1,
+	&.ncoltable2,
+	&.ncoltable3 {
+		border: 0;
+
+		td {
+			vertical-align: middle; /* This looks slighty better dan top alignment */
+		}
+	}
+
+	td[width="15%"] {
+		border: 0;
+	}
+
+	td[width="70%"] {
+		padding: 0;
+	}
+}
+
+.ncoltxtc {
+	&:only-of-type {
+		display: none;
+		border: 0;
+	}
+
+	&[align="right"] {
+		small {
+			font-weight: bold;
+		}
+	}
+
+	&[align="left"] {
+		img {
+			display: inline-block;
+		}
+	}
+
+	small {
+		color: @gray;
+	}
+}
+
+.ncoltxtl {
+	&[align="left"] {
+		&:first-child {
+			text-align: right;
+		}
+	}
+}
+
+/**
+ * Subtitles
+ */
+.ncolh1 {
+	small {
+		.og-hook-subtitle();
+	}
+}
+
+.ncolinput {
+	input[maxlength="10"] {
+		width: 25%;
+		display: inline-block;
+	}
+
+	select[name="CVCFlag"] {
+		width: 50%;
+		display: inline-block;
+	}
+}
+
+.ncolline1,
+.ncolline2 {
+	text-align: left;
+
+	&:last-child {
+		width: 50%;
+	}
+
+	&[width="5%"] {
+		display: none;
+	}
+
+	&[width="40%"] {
+		text-align: right;
+		width: 50%;
+	}
+}
+
+/**
+ * Form styles
+ */
+
+select,
+input[type="text"] {
+	.og-hook-form-control();
+}
+
+select[size] {
+	height: @input-height-base;
+	display: inline-block;
+	width: 40%;
+	margin-left: .5em;
+
+	&:first-child {
+		width: 25%;
+		margin-left: 0;
+		margin-right: .5em;
+	}
+}
+
+input[type="submit"] {
+	.og-hook-button();
+
+	&#btn_Continue,
+	&#submit1,
+	&[name="payment"] {
+		.og-hook-button-primary();
+	}
+}
+
+
+/**
+ * Footer
+ */
+
+.ncoltable3 {
+	tr:last-child {
+		table {
+			td {
+				border: 0;
+			}
+		}
+	}
+}
+
+/**
+ * Bottom logo's
+ */
+.ncollogoc {
+	vertical-align: top;
+
+	&[colspan="3"] {
+		padding: 0;
+	}
+
+	img {
+		display: inline-block;
+	}
+
+	> a {
+		display: block;
+		margin-bottom: .5em;
+	}
+
+	small {
+		color: @gray-light;
+	}
+
+
+	form.normal {
+		text-align: right;
+	}
+
+	&:nth-child(2) {
+		form {
+			text-align: left;
+		}
+	}
+
+	a.bottom {
+		color: @gray-light;
+		display: inline-block;
+		padding: 0 0 0 .3em;
+		font-weight: normal;
+
+		&:nth-child(3) {
+			padding-right: .3em;
+		}
+	}
+}
+
+@media screen and (max-width: 768px) {
+	td[width="5%"],
+	td[width="15%"] {
+		display: none;
+	}
+
+	td[width="70%"] {
+		width: 100%;
+		padding: 0;
+	}
+}
