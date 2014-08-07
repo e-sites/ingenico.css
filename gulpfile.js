@@ -33,7 +33,7 @@ gulp.task('minify-html', function () {
 gulp.task('process-css', function () {
     return gulp.src('./src/styles.css')
         .pipe(uncss({
-            ignore: ['.og-outer-wrapper'],
+            ignore: ['.ign-outer-wrapper'],
             html: [
             	'views/bancontact.html',
             	'views/giropay.html',
