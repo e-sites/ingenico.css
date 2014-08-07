@@ -1,5 +1,5 @@
 /**
- * First of, include Bootstrap
+ * First of, include some Bootstrap base files
  *
  * Now I hear you thinking..."but but but, BS is f*cking huge! Such overhead!"
  * Yes it is. Luckily for you...all unnecessary CSS is stripped out
@@ -216,12 +216,12 @@ textarea {
   line-height: inherit;
 }
 a {
-  color: #428bca;
+  color: #ffa500;
   text-decoration: none;
 }
 a:hover,
 a:focus {
-  color: #2a6496;
+  color: #b37300;
   text-decoration: underline;
 }
 a:focus {
@@ -455,10 +455,10 @@ mark,
   color: #777777;
 }
 .text-primary {
-  color: #428bca;
+  color: #ffa500;
 }
 a.text-primary:hover {
-  color: #3071a9;
+  color: #cc8400;
 }
 .text-success {
   color: #3c763d;
@@ -486,10 +486,10 @@ a.text-danger:hover {
 }
 .bg-primary {
   color: #fff;
-  background-color: #428bca;
+  background-color: #ffa500;
 }
 a.bg-primary:hover {
-  background-color: #3071a9;
+  background-color: #cc8400;
 }
 .bg-success {
   background-color: #dff0d8;
@@ -1393,8 +1393,8 @@ fieldset[disabled] .btn-default.active {
 }
 .btn-primary {
   color: #ffffff;
-  background-color: #428bca;
-  border-color: #357ebd;
+  background-color: #ffa500;
+  border-color: #e69500;
 }
 .btn-primary:hover,
 .btn-primary:focus,
@@ -1402,8 +1402,8 @@ fieldset[disabled] .btn-default.active {
 .btn-primary.active,
 .open > .dropdown-toggle.btn-primary {
   color: #ffffff;
-  background-color: #3071a9;
-  border-color: #285e8e;
+  background-color: #cc8400;
+  border-color: #a86d00;
 }
 .btn-primary:active,
 .btn-primary.active,
@@ -1425,11 +1425,11 @@ fieldset[disabled] .btn-primary:active,
 .btn-primary.disabled.active,
 .btn-primary[disabled].active,
 fieldset[disabled] .btn-primary.active {
-  background-color: #428bca;
-  border-color: #357ebd;
+  background-color: #ffa500;
+  border-color: #e69500;
 }
 .btn-primary .badge {
-  color: #428bca;
+  color: #ffa500;
   background-color: #ffffff;
 }
 .btn-success {
@@ -1597,7 +1597,7 @@ fieldset[disabled] .btn-danger.active {
   background-color: #ffffff;
 }
 .btn-link {
-  color: #428bca;
+  color: #ffa500;
   font-weight: normal;
   cursor: pointer;
   border-radius: 0;
@@ -1618,7 +1618,7 @@ fieldset[disabled] .btn-link {
 }
 .btn-link:hover,
 .btn-link:focus {
-  color: #2a6496;
+  color: #b37300;
   text-decoration: underline;
   background-color: transparent;
 }
@@ -1660,18 +1660,26 @@ input[type="button"].btn-block {
   width: 100%;
 }
 /**
- * Custom .og- stuff
+ * Override BS variables
+ */
+/**
+ * Most outer wrapper
  */
 .og-outer-wrapper {
-  max-width: 90%;
+  max-width: 700px;
   border: 1px solid #ccc;
   margin: 1em auto 0;
+}
+@media screen and (max-width: 768px) {
+  .og-outer-wrapper {
+    max-width: 90%;
+  }
 }
 /**
  * Style hooks
  *
- * Based on Bootstrap, but you can easily hook up your own
- * from your favorite framework
+ * Currently based on Bootstrap, but you can easily hook up
+ * classes from your favorite framework
  */
 .og-hook-main-title {
   font-family: inherit;
@@ -1757,8 +1765,8 @@ textarea.og-hook-form-control {
 }
 .og-hook-button-primary {
   color: #ffffff;
-  background-color: #428bca;
-  border-color: #357ebd;
+  background-color: #ffa500;
+  border-color: #e69500;
 }
 .og-hook-button-primary:hover,
 .og-hook-button-primary:focus,
@@ -1766,8 +1774,8 @@ textarea.og-hook-form-control {
 .og-hook-button-primary.active,
 .open > .dropdown-toggle.og-hook-button-primary {
   color: #ffffff;
-  background-color: #3071a9;
-  border-color: #285e8e;
+  background-color: #cc8400;
+  border-color: #a86d00;
 }
 .og-hook-button-primary:active,
 .og-hook-button-primary.active,
@@ -1789,11 +1797,11 @@ fieldset[disabled] .og-hook-button-primary:active,
 .og-hook-button-primary.disabled.active,
 .og-hook-button-primary[disabled].active,
 fieldset[disabled] .og-hook-button-primary.active {
-  background-color: #428bca;
-  border-color: #357ebd;
+  background-color: #ffa500;
+  border-color: #e69500;
 }
 .og-hook-button-primary .badge {
-  color: #428bca;
+  color: #ffa500;
   background-color: #ffffff;
 }
 .og-hook-button {
@@ -1961,7 +1969,6 @@ table td[width="15%"] {
   border: 0;
 }
 table td[width="70%"] {
-  border: 1px solid #ccc;
   padding: 0;
 }
 .ncoltxtc:only-of-type {
@@ -2146,8 +2153,8 @@ input[type="submit"]#btn_Continue,
 input[type="submit"]#submit1,
 input[type="submit"][name="payment"] {
   color: #ffffff;
-  background-color: #428bca;
-  border-color: #357ebd;
+  background-color: #ffa500;
+  border-color: #e69500;
 }
 input[type="submit"]#btn_Continue:hover,
 input[type="submit"]#submit1:hover,
@@ -2165,8 +2172,8 @@ input[type="submit"][name="payment"].active,
 .open > .dropdown-toggleinput[type="submit"]#submit1,
 .open > .dropdown-toggleinput[type="submit"][name="payment"] {
   color: #ffffff;
-  background-color: #3071a9;
-  border-color: #285e8e;
+  background-color: #cc8400;
+  border-color: #a86d00;
 }
 input[type="submit"]#btn_Continue:active,
 input[type="submit"]#submit1:active,
@@ -2224,13 +2231,13 @@ input[type="submit"][name="payment"][disabled].active,
 fieldset[disabled] input[type="submit"]#btn_Continue.active,
 fieldset[disabled] input[type="submit"]#submit1.active,
 fieldset[disabled] input[type="submit"][name="payment"].active {
-  background-color: #428bca;
-  border-color: #357ebd;
+  background-color: #ffa500;
+  border-color: #e69500;
 }
 input[type="submit"]#btn_Continue .badge,
 input[type="submit"]#submit1 .badge,
 input[type="submit"][name="payment"] .badge {
-  color: #428bca;
+  color: #ffa500;
   background-color: #ffffff;
 }
 /**

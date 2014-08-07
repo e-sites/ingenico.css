@@ -1,7 +1,7 @@
 {
   "name": "Ogone.css",
   "version": "0.1.0",
-  "description": "Custom CSS styles that make it easier to cope with the default Ogone payment view",
+  "description": "An elegant front-end boilerplate that'll make it easier to cope with the default Ogone payment view.",
   "homepage": "http://github.e-sites.nl/ogone.css/",
   "author": {
     "name": "e-sites",

@@ -1,5 +1,5 @@
 /**
- * First of, include Bootstrap
+ * First of, include some Bootstrap base files
  *
  * Now I hear you thinking..."but but but, BS is f*cking huge! Such overhead!"
  * Yes it is. Luckily for you...all unnecessary CSS is stripped out
@@ -15,19 +15,28 @@
 @import "../bower_components/bootstrap/less/buttons.less";
 
 /**
- * Custom .og- stuff
+ * Override BS variables
+ */
+@brand-primary: orange;
+
+/**
+ * Most outer wrapper
  */
 .og-outer-wrapper {
-	max-width: 90%;
+	max-width: 700px;
 	border: 1px solid #ccc;
 	margin: 1em auto 0;
+
+	@media screen and (max-width: 768px) {
+		max-width: 90%;
+	}
 }
 
 /**
  * Style hooks
  *
- * Based on Bootstrap, but you can easily hook up your own
- * from your favorite framework
+ * Currently based on Bootstrap, but you can easily hook up
+ * classes from your favorite framework
  */
 .og-hook-main-title {
 	.h2();

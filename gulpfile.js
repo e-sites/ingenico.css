@@ -44,7 +44,7 @@ gulp.task('process-css', function () {
             	'views/waitmsg.html'
             ]
         }))
-        //.pipe(minify())
+        .pipe(minify())
         .pipe(rename('styles.min.css'))
 		.pipe(header(banner, {pkg : pkg }))
         .pipe(gulp.dest('./dist'));
