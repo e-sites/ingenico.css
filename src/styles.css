@@ -1665,13 +1665,13 @@ input[type="button"].btn-block {
 /**
  * Most outer wrapper
  */
-.og-outer-wrapper {
+.ign-outer-wrapper {
   max-width: 700px;
   border: 1px solid #ccc;
   margin: 1em auto 0;
 }
 @media screen and (max-width: 768px) {
-  .og-outer-wrapper {
+  .ign-outer-wrapper {
     max-width: 90%;
   }
 }
@@ -1681,7 +1681,7 @@ input[type="button"].btn-block {
  * Currently based on Bootstrap, but you can easily hook up
  * classes from your favorite framework
  */
-.og-hook-main-title {
+.ign-hook-main-title {
   font-family: inherit;
   font-weight: 500;
   line-height: 1.1;
@@ -1690,17 +1690,17 @@ input[type="button"].btn-block {
   margin-bottom: 10px;
   font-size: 30px;
 }
-.og-hook-main-title small,
-.og-hook-main-title .small {
+.ign-hook-main-title small,
+.ign-hook-main-title .small {
   font-weight: normal;
   line-height: 1;
   color: #777777;
 }
-.og-hook-main-title small,
-.og-hook-main-title .small {
+.ign-hook-main-title small,
+.ign-hook-main-title .small {
   font-size: 65%;
 }
-.og-hook-subtitle {
+.ign-hook-subtitle {
   font-family: inherit;
   font-weight: 500;
   line-height: 1.1;
@@ -1709,17 +1709,17 @@ input[type="button"].btn-block {
   margin-bottom: 10px;
   font-size: 24px;
 }
-.og-hook-subtitle small,
-.og-hook-subtitle .small {
+.ign-hook-subtitle small,
+.ign-hook-subtitle .small {
   font-weight: normal;
   line-height: 1;
   color: #777777;
 }
-.og-hook-subtitle small,
-.og-hook-subtitle .small {
+.ign-hook-subtitle small,
+.ign-hook-subtitle .small {
   font-size: 65%;
 }
-.og-hook-form-control {
+.ign-hook-form-control {
   display: block;
   width: 100%;
   height: 34px;
@@ -1737,74 +1737,74 @@ input[type="button"].btn-block {
   -o-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
   transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
 }
-.og-hook-form-control:focus {
+.ign-hook-form-control:focus {
   border-color: #66afe9;
   outline: 0;
   -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(102, 175, 233, 0.6);
   box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(102, 175, 233, 0.6);
 }
-.og-hook-form-control::-moz-placeholder {
+.ign-hook-form-control::-moz-placeholder {
   color: #777777;
   opacity: 1;
 }
-.og-hook-form-control:-ms-input-placeholder {
+.ign-hook-form-control:-ms-input-placeholder {
   color: #777777;
 }
-.og-hook-form-control::-webkit-input-placeholder {
+.ign-hook-form-control::-webkit-input-placeholder {
   color: #777777;
 }
-.og-hook-form-control[disabled],
-.og-hook-form-control[readonly],
-fieldset[disabled] .og-hook-form-control {
+.ign-hook-form-control[disabled],
+.ign-hook-form-control[readonly],
+fieldset[disabled] .ign-hook-form-control {
   cursor: not-allowed;
   background-color: #eeeeee;
   opacity: 1;
 }
-textarea.og-hook-form-control {
+textarea.ign-hook-form-control {
   height: auto;
 }
-.og-hook-button-primary {
+.ign-hook-button-primary {
   color: #ffffff;
   background-color: #ffa500;
   border-color: #e69500;
 }
-.og-hook-button-primary:hover,
-.og-hook-button-primary:focus,
-.og-hook-button-primary:active,
-.og-hook-button-primary.active,
-.open > .dropdown-toggle.og-hook-button-primary {
+.ign-hook-button-primary:hover,
+.ign-hook-button-primary:focus,
+.ign-hook-button-primary:active,
+.ign-hook-button-primary.active,
+.open > .dropdown-toggle.ign-hook-button-primary {
   color: #ffffff;
   background-color: #cc8400;
   border-color: #a86d00;
 }
-.og-hook-button-primary:active,
-.og-hook-button-primary.active,
-.open > .dropdown-toggle.og-hook-button-primary {
+.ign-hook-button-primary:active,
+.ign-hook-button-primary.active,
+.open > .dropdown-toggle.ign-hook-button-primary {
   background-image: none;
 }
-.og-hook-button-primary.disabled,
-.og-hook-button-primary[disabled],
-fieldset[disabled] .og-hook-button-primary,
-.og-hook-button-primary.disabled:hover,
-.og-hook-button-primary[disabled]:hover,
-fieldset[disabled] .og-hook-button-primary:hover,
-.og-hook-button-primary.disabled:focus,
-.og-hook-button-primary[disabled]:focus,
-fieldset[disabled] .og-hook-button-primary:focus,
-.og-hook-button-primary.disabled:active,
-.og-hook-button-primary[disabled]:active,
-fieldset[disabled] .og-hook-button-primary:active,
-.og-hook-button-primary.disabled.active,
-.og-hook-button-primary[disabled].active,
-fieldset[disabled] .og-hook-button-primary.active {
+.ign-hook-button-primary.disabled,
+.ign-hook-button-primary[disabled],
+fieldset[disabled] .ign-hook-button-primary,
+.ign-hook-button-primary.disabled:hover,
+.ign-hook-button-primary[disabled]:hover,
+fieldset[disabled] .ign-hook-button-primary:hover,
+.ign-hook-button-primary.disabled:focus,
+.ign-hook-button-primary[disabled]:focus,
+fieldset[disabled] .ign-hook-button-primary:focus,
+.ign-hook-button-primary.disabled:active,
+.ign-hook-button-primary[disabled]:active,
+fieldset[disabled] .ign-hook-button-primary:active,
+.ign-hook-button-primary.disabled.active,
+.ign-hook-button-primary[disabled].active,
+fieldset[disabled] .ign-hook-button-primary.active {
   background-color: #ffa500;
   border-color: #e69500;
 }
-.og-hook-button-primary .badge {
+.ign-hook-button-primary .badge {
   color: #ffa500;
   background-color: #ffffff;
 }
-.og-hook-button {
+.ign-hook-button {
   display: inline-block;
   margin-bottom: 0;
   font-weight: normal;
@@ -1823,28 +1823,28 @@ fieldset[disabled] .og-hook-button-primary.active {
   -ms-user-select: none;
   user-select: none;
 }
-.og-hook-button:focus,
-.og-hook-button:active:focus,
-.og-hook-button.active:focus {
+.ign-hook-button:focus,
+.ign-hook-button:active:focus,
+.ign-hook-button.active:focus {
   outline: thin dotted;
   outline: 5px auto -webkit-focus-ring-color;
   outline-offset: -2px;
 }
-.og-hook-button:hover,
-.og-hook-button:focus {
+.ign-hook-button:hover,
+.ign-hook-button:focus {
   color: #333333;
   text-decoration: none;
 }
-.og-hook-button:active,
-.og-hook-button.active {
+.ign-hook-button:active,
+.ign-hook-button.active {
   outline: 0;
   background-image: none;
   -webkit-box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
   box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
 }
-.og-hook-button.disabled,
-.og-hook-button[disabled],
-fieldset[disabled] .og-hook-button {
+.ign-hook-button.disabled,
+.ign-hook-button[disabled],
+fieldset[disabled] .ign-hook-button {
   cursor: not-allowed;
   pointer-events: none;
   opacity: 0.65;
