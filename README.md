@@ -20,7 +20,7 @@ Yes, <em>"customize the entire design"</em>, that's what we want! And that's whe
 </p>
 <h2>Examples</h2>
 <p>
-    All examples can be found at: <a href="http://github.e-sites.nl/Ingenico.css/">http://github.e-sites.nl/Ingenico.css/</a>
+    All examples can be found at: <a href="http://github.e-sites.nl/ingenico.css/">http://github.e-sites.nl/ingenico.css/</a>
 </p>
 <h2>Getting started</h2>
 <p>
