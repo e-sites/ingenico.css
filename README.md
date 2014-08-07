@@ -41,7 +41,7 @@ Yes, <em>"customize the entire design"</em>, that's what we want! And that's whe
 <hr>
 <h2>Distribution build</h2>
 <p>
-    The original HTML and CSS is already bad as it is, so <strong>Ingenico.css</strong> comes with an optimized build (created with <a href="http://gulpjs.com/" target="_blank">gulp.js</a>) for your production enviroment. All code is minified and unecessary CSS rules are stripped out with <a href="https://www.npmjs.org/package/gulp-uncss" target="_blank"><code>gulp-uncss</code></a>. After this optimization it clocks in at <strong>9KB</strong> minified and <strong>2KB</strong> when being served with gzip compression. This build is located in the <strong>dist</strong> directory.
+    The original HTML and CSS is already bad as it is, so <strong>Ingenico.css</strong> comes with an optimized build (created with <a href="http://gulpjs.com/" target="_blank">gulp.js</a>) for your production enviroment. All code is minified and unnecessary CSS rules are stripped out with <a href="https://www.npmjs.org/package/gulp-uncss" target="_blank"><code>gulp-uncss</code></a>. After this optimization it clocks in at <strong>9KB</strong> minified and <strong>2KB</strong> when being served with gzip compression. This build is located in the <strong>dist</strong> directory.
 </p>
 <p>
     As for the HTML template, this is minified as well and points directly to the corresponding CSS (hosted on GitHub).
