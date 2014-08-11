@@ -1971,6 +1971,10 @@ table td[width="15%"] {
 table td[width="70%"] {
   padding: 0;
 }
+.ncoltxtl:only-of-type {
+  border: 0;
+  text-align: right;
+}
 .ncoltxtc:only-of-type {
   display: none;
   border: 0;

@@ -24,7 +24,11 @@ Yes, <em>"customize the entire design"</em>, that's what we want! And that's whe
 </p>
 <h2>Getting started</h2>
 <p>
-    All you need to do is, when implementing Ingenico, make use of the <strong>templates/clean.html</strong> file. Like this:
+    There are basically two things you'll need to do when implementing <strong>Ingenico.css</strong>. First of, make sure that usage of the dynamic template is allowed and if so, point both <em>Trusted dynamic template URL</em> and <em>Trusted website hostname</em> to the GitHub environment.
+</p>
+<img src="http://i.imgur.com/7Ci6dNg.png" alt="">
+<p>
+    Second, you will need to pass the <code>TP</code> parameter and make it point to the <strong>template.html</strong> file. Like this:
 </p>
 <pre><code>&lt;input name="TP" type="hidden" value="https://e-sites.github.io/Ingenico.css/dist/template.html"&gt;</code></pre>
 <p>
