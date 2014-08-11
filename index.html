@@ -99,14 +99,23 @@
             <iframe id="viewer" src="php/viewer.php" width="100%" height="500" frameborder="0" seamless></iframe>
             <hr id="gettingstarted">
             <h2>Getting started</h2>
+            <div class="thumbnail pull-left" style="margin-right:1em;">
+                <figure>
+                    <img src="http://i.imgur.com/7Ci6dNg.png" alt="">
+                    <figcaption style="padding:.4em;"><em>Ogone back-end view: dynamic template URL's</em></figcaption>
+                </figure>
+            </div>
             <p>
-                All you need to do is, when implementing Ingenico, make use of the <strong>templates/clean.html</strong> file. Like this:
+                There are basically two things you'll need to do when implementing <strong>Ingenico.css</strong>. First of, make sure that usage of the dynamic template is allowed and if so, point both <em>Trusted dynamic template URL</em> and <em>Trusted website hostname</em> to the GitHub environment.
+            </p>
+            <p>
+                Second, you will need to pass the <code>TP</code> parameter and make it point to the <strong>template.html</strong> file. Like this:
             </p>
 <pre class="prettyprint"><code>&lt;input name="TP" type="hidden" value="https://e-sites.github.io/ingenico.css/dist/template.html"&gt;</code></pre>
             <p>
                 Ingenico will fetch the <strong>.html</strong> file and the string <code>'$$$PAYMENT ZONE$$$'</code> will be replaced with their payment form. As for the CSS styles, these will be loaded directly from GitHub.
             </p>
-            <hr>
+            <hr style="clear:both;">
             <h2>Roll your own styles</h2>
             <p>
                 The default <strong>Ingenico.css</strong> styles are based on <a href="http://getbootstrap.com/" target="_blank">Bootstrap</a> but you can quite easily roll your own when you're comfortable around LESS / CSS. In the next release we will make sure to include a howto.
@@ -117,7 +126,7 @@
             <hr>
             <h2>Distribution build</h2>
             <p>
-                The original HTML and CSS is already bad as it is, so <strong>Ingenico.css</strong> comes with an optimized build (created with <a href="http://gulpjs.com/" target="_blank">gulp.js</a>) for your production enviroment. All code is minified and unecessary CSS rules are stripped out with <a href="https://www.npmjs.org/package/gulp-uncss" target="_blank"><code>gulp-uncss</code></a>. After this optimization it clocks in at <strong>9KB</strong> minified and <strong>2KB</strong> when being served with gzip compression. This build is located in the <strong>dist</strong> directory.
+                The original HTML and CSS is already bad as it is, so <strong>Ingenico.css</strong> comes with an optimized build (created with <a href="http://gulpjs.com/" target="_blank">gulp.js</a>) for your production enviroment. All code is minified and unnecessary CSS rules are stripped out with <a href="https://www.npmjs.org/package/gulp-uncss" target="_blank"><code>gulp-uncss</code></a>. After this optimization it clocks in at <strong>6KB</strong> minified and <strong>2KB</strong> when being served with gzip compression. This build is located in the <strong>dist</strong> directory.
             </p>
             <p>
                 As for the HTML template, it is minified as well and points directly to the corresponding CSS (hosted on GitHub).
