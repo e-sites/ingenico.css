@@ -31,19 +31,19 @@ $brand-primary: orange;
  * classes from your favorite framework
  */
 .ign-hook-main-title {
-	.h2();
+	@extend .h2;
 }
 .ign-hook-subtitle {
-	.h3();
+	@extend .h3;
 }
 .ign-hook-form-control {
-	.form-control();
+	@extend .form-control;
 }
 .ign-hook-button-primary {
-	.btn-primary();
+	@extend .btn-primary;
 }
 .ign-hook-button {
-	.btn();
+	@extend .btn;
 }
 
 /**
