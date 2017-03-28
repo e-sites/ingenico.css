@@ -57,15 +57,22 @@ Yes, <em>"customize the entire design"</em>, that's what we want! And that's whe
 <p>
     Editor preferences are available in the editor config for easy use in common text editors. Read more and download plugins at http://editorconfig.org.
 </p>
-<h2>Roadmap</h2>
-<p>
-    <strong>Ingenico.css</strong> is not finished yet, we definitely got some things planned, such as:
-</p>
-<ul>
-    <li>adding views from missing payment methods;</li>
-    <li>write more documentation, both inline (in the code) as well on this very page;</li>
-    <li>adding examples that work with other frameworks than Bootstrap;</li>
-</ul>
+
+
+----------
+
+
+<h3>Setting up the project locally</h3>
+Clone the project locally and use Yarn to install the dependencies
+
+    $ yarn
+When all dependencies are installed you can process your changes made in the src files.
+
+    $ gulp
+This will start Gulp and all the tasks that the taskrunner has configured
+
+*Commit and push your work and make a push request to our repository*
+
 <h2>About the author</h2>
 <p>
     E-sites is a full service internet agency with offices in Breda (NL) and Curaçao. We create innovative, extraordinary and effective websites, (mobile) apps and web campaigns for organizations with online ambitions.
