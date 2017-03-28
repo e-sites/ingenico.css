@@ -4,8 +4,9 @@
 
 var pkg = require('./package.json'),
 	gulp = require('gulp'),
+    less = require('gulp-less'),
 	uncss = require('gulp-uncss'),
-	minify = require('gulp-minify-css'),
+    cleanCSS = require('gulp-minify-css'),
     processHTML = require('gulp-processhtml'),
     minifyHTML = require('gulp-minify-html'),
 	header = require('gulp-header'),
@@ -16,38 +17,28 @@ var pkg = require('./package.json'),
 	'MIT licensed',
 	'Copyright (C) ' + gutil.date("yyyy") + ' <%= pkg.author.name %>',
 	"*/\n"
-	].join(' ');	
-
-gulp.task('clean', function () {
-  return gulp.src('./dist', { read: false })
-    .pipe(rimraf({ force: true }));
-});
+	].join(' ');
 
 gulp.task('minify-html', function () {
     return gulp.src('./templates/clean.html')
-        .pipe(processHTML('template.html'))
+        .pipe(processHTML())
         .pipe(minifyHTML())
+		.pipe(rename('template.html'))
         .pipe(gulp.dest('./dist/'))
 });
 
+gulp.task('styles', function () {
+    return gulp.src('./src/less/ingenico.less')
+        .pipe(less())
+        .pipe(gulp.dest('./dist'));
+});
+
 gulp.task('process-css', function () {
-    return gulp.src('./src/styles.css')
-        .pipe(uncss({
-            ignore: ['.ign-outer-wrapper'],
-            html: [
-            	'views/bancontact.html',
-            	'views/giropay.html',
-            	'views/ideal.html',
-            	'views/index.html',
-            	'views/mastercard.html',
-            	'views/visa.html',
-            	'views/waitmsg.html'
-            ]
-        }))
-        .pipe(minify())
-        .pipe(rename('styles.min.css'))
+    return gulp.src('./dist/ingenico.css')
+        .pipe(cleanCSS({compatibility: 'ie8'}))
+        .pipe(rename('ingenico.min.css'))
 		.pipe(header(banner, {pkg : pkg }))
         .pipe(gulp.dest('./dist'));
 });
 
-gulp.task('default', ['clean', 'minify-html', 'process-css']);
+gulp.task('default', ['minify-html', 'styles', 'process-css']);
