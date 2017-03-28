@@ -11,7 +11,6 @@ var pkg = require('./package.json'),
     minifyHTML = require('gulp-minify-html'),
 	header = require('gulp-header'),
 	gutil = require('gulp-util'),
-    rimraf = require('gulp-rimraf'),
 	rename = require('gulp-rename'),
 	banner = ['/*! <%= pkg.name %> <%= pkg.version %>',
 	'MIT licensed',
@@ -20,7 +19,7 @@ var pkg = require('./package.json'),
 	].join(' ');
 
 gulp.task('minify-html', function () {
-    return gulp.src('./templates/clean.html')
+    return gulp.src('./rsc/templates/clean.html')
         .pipe(processHTML())
         .pipe(minifyHTML())
 		.pipe(rename('template.html'))
@@ -35,6 +34,18 @@ gulp.task('styles', function () {
 
 gulp.task('process-css', function () {
     return gulp.src('./dist/ingenico.css')
+        .pipe(uncss({
+            ignore: ['.ign-outer-wrapper'],
+            html: [
+                './src/views/bancontact.html',
+                './src/views/giropay.html',
+                './src/views/ideal.html',
+                './src/views/index.html',
+                './src/views/mastercard.html',
+                './src/views/visa.html',
+                './src/views/waitmsg.html'
+            ]
+        }))
         .pipe(cleanCSS({compatibility: 'ie8'}))
         .pipe(rename('ingenico.min.css'))
 		.pipe(header(banner, {pkg : pkg }))
