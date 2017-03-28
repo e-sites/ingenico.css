@@ -1,0 +1,52 @@
+/**
+ * First of, include some Bootstrap base files
+ *
+ * Now I hear you thinking..."but but but, BS is f*cking huge! Such overhead!"
+ * Yes it is. Luckily for you...all unnecessary CSS is stripped out
+ * in the production build. So, hold your horses ;)
+ */
+
+/**
+ * Override BS variables
+ */
+$brand-primary: orange;
+
+/**
+ * Most outer wrapper
+ */
+.ign-outer-wrapper {
+	max-width: 700px;
+	border: 1px solid #ccc;
+	margin: 1em auto 0;
+
+	@media screen and (max-width: 768px) {
+		max-width: 90%;
+	}
+}
+
+/**
+ * Style hooks
+ *
+ * Currently based on Bootstrap, but you can easily hook up
+ * classes from your favorite framework
+ */
+.ign-hook-main-title {
+	.h2();
+}
+.ign-hook-subtitle {
+	.h3();
+}
+.ign-hook-form-control {
+	.form-control();
+}
+.ign-hook-button-primary {
+	.btn-primary();
+}
+.ign-hook-button {
+	.btn();
+}
+
+/**
+ * Handle all overrides
+ */
+@import "./overrides";
