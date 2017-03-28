@@ -25,7 +25,6 @@
     }
   ],
   "devDependencies": {
-    "bootstrap": "^3.3.7",
     "gulp": "~3.9.1",
     "gulp-header": "~1.8.8",
     "gulp-minify-css": "~0.3.7",
@@ -37,6 +36,6 @@
     "gulp-less": "^3.3.0"
   },
   "dependencies": {
-    "gulp-less": "^3.3.0"
+    "bootstrap": "^3.3.7"
   }
 }
