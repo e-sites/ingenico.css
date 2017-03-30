@@ -1,6 +1,25 @@
 {
-  "name": "Ingenico.css",
-  "devDependencies": {
-    "bootstrap": "~3.2.0"
-  }
+  "name": "ingenico-css",
+  "prettyName": "ingenico.css",
+  "description": "An elegant front-end boilerplate that'll make it easier to cope with the default Ingenico payment view.",
+  "homepage": "http://github.e-sites.nl/ingenico.css/",
+  "author": {
+    "name": "e-sites",
+    "email": "github@e-sites.nl",
+    "web": "http://e-sites.nl/"
+  },
+  "contributors": [{
+    "name": "Rick de Graaff",
+    "email": "rick@rickdegraaff.nl"
+  }],
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/e-sites/ingenico.css.git"
+  },
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "https://github.com/e-sites/ingenico.css/blob/master/LICENSE"
+    }
+  ]
 }

@@ -5,19 +5,11 @@
  * Yes it is. Luckily for you...all unnecessary CSS is stripped out
  * in the production build. So, hold your horses ;)
  */
-@import "../bower_components/bootstrap/less/variables.less";
-@import "../bower_components/bootstrap/less/mixins.less";
-@import "../bower_components/bootstrap/less/normalize.less";
-@import "../bower_components/bootstrap/less/scaffolding.less";
-@import "../bower_components/bootstrap/less/type.less";
-@import "../bower_components/bootstrap/less/tables.less";
-@import "../bower_components/bootstrap/less/forms.less";
-@import "../bower_components/bootstrap/less/buttons.less";
 
 /**
  * Override BS variables
  */
-@brand-primary: orange;
+$brand-primary: orange;
 
 /**
  * Most outer wrapper
@@ -39,22 +31,22 @@
  * classes from your favorite framework
  */
 .ign-hook-main-title {
-	.h2();
+	@extend .h2;
 }
 .ign-hook-subtitle {
-	.h3();
+	@extend .h3;
 }
 .ign-hook-form-control {
-	.form-control();
+	@extend .form-control;
 }
 .ign-hook-button-primary {
-	.btn-primary();
+	@extend .btn-primary;
 }
 .ign-hook-button {
-	.btn();
+	@extend .btn;
 }
 
 /**
  * Handle all overrides
  */
-@import "overrides.less";
+@import "./overrides";
