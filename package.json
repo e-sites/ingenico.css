@@ -1,6 +1,6 @@
 {
   "name": "ingenico.css",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "An elegant front-end boilerplate that'll make it easier to cope with the default Ingenico payment view.",
   "homepage": "http://github.e-sites.nl/ingenico.css/",
   "author": {
@@ -33,9 +33,7 @@
     "gulp-rename": "~1.2.2",
     "gulp-uncss": "~0.4.5",
     "gulp-util": "~3.0.8",
-    "gulp-less": "^3.3.0"
-  },
-  "dependencies": {
+    "gulp-less": "^3.3.0",
     "bootstrap": "^3.3.7"
   }
 }
